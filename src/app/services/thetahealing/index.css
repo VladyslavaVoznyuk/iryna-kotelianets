@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #C9B09C;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #401313;
+}
+
+.section-bg {
+    padding: 4rem 2rem;
+    background: linear-gradient(to bottom, #C9B09C, #f3d6c0);
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-image img {
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    flex: 1;
+    min-width: 280px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #0c0c0c;
+    font-family: 'Playfair Display', serif;
+}
+
+.container h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    position: relative;
+    color: #2c2c2c;
+    padding-left: 15px;
+}
+
+.container h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #8C5845;
+    border-radius: 2px;
+}
+
+.intro {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.format ul {
+    padding-left: 1.5rem;
+}
+
+.format li {
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-links p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.icon.telegram {
+    background: #229ED9;
+    color: white;
+}
+
+.icon.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .service-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        text-align: left;
+    }
+}
