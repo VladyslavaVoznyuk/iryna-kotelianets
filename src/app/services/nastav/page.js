@@ -8,10 +8,10 @@ export default function NastavPage() {
         <main>
             <nav className="navbar">
                 <ul>
-                    <li><a href="/">Головна</a></li>
-                    <li><a href="/#about">Про мене</a></li>
-                    <li><a href="/#services">Послуги</a></li>
-                    <li><a href="/#testimonials">Відгуки</a></li>
+                    <li><Link href="/">Головна</Link></li>
+                    <li><Link href="/#about">Про мене</Link></li>
+                    <li><Link href="/#services">Послуги</Link></li>
+                    <li><Link href="/#testimonials">Відгуки</Link></li>
                 </ul>
             </nav>
 

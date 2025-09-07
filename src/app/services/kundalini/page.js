@@ -8,10 +8,10 @@ export default function KundaliniPage() {
         <main>
             <nav className="navbar">
                 <ul>
-                    <li><a href="/">Головна</a></li>
-                    <li><a href="/#about">Про мене</a></li>
-                    <li><a href="/#services">Послуги</a></li>
-                    <li><a href="/#testimonials">Відгуки</a></li>
+                    <li><Link href="/">Головна</Link></li>
+                    <li><Link href="/#about">Про мене</Link></li>
+                    <li><Link href="/#services">Послуги</Link></li>
+                    <li><Link href="/#testimonials">Відгуки</Link></li>
                 </ul>
             </nav>
 
@@ -61,22 +61,22 @@ export default function KundaliniPage() {
                         <div className="social-links">
                             <p>Запис можна здійснити в Telegram та Instagram</p>
                             <div className="icons">
-                                <a
+                                <Link
                                     href="https://t.me/ira_kotelianets"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="icon icon-telegram"
                                 >
                                     <FaTelegramPlane size={28} />
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href="https://www.instagram.com/iryna_kotelianets?igsh=MW9vaHRtMW5xdDRyaQ=="
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="icon icon-instagram"
                                 >
                                     <FaInstagram size={28} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

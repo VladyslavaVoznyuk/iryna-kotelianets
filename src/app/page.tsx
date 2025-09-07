@@ -1,5 +1,4 @@
 'use client';
-import { useState, useEffect } from 'react';
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,10 +8,10 @@ export default function HomePage() {
       <main className="font-sans">
         <nav className="navbar">
           <ul>
-            <li><a href="#hero">Головна</a></li>
-            <li><a href="#about">Про мене</a></li>
-            <li><a href="#services">Послуги</a></li>
-            <li><a href="#testimonials">Відгуки</a></li>
+            <li><Link href="#hero">Головна</Link></li>
+            <li><Link href="#about">Про мене</Link></li>
+            <li><Link href="#services">Послуги</Link></li>
+            <li><Link href="#testimonials">Відгуки</Link></li>
           </ul>
         </nav>
 
@@ -57,7 +56,10 @@ export default function HomePage() {
               <div className="services-cards">
 
                   <div className="service-card">
-                      <img src="/kundalini.jpg" alt="Кундаліні активація" />
+                      <Image src="/kundalini.jpg" alt="Кундаліні активація"
+                             width={400}
+                             height={300}
+                             className="rounded-md"/>
                       <h3>Активація кундаліні</h3>
                       <p>
                           Активація енергії Кундаліні — це пробудження життєвої енергії.
@@ -68,7 +70,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <img src="/teta.jpg" alt="Тета-хілінг" />
+                      <Image src="/teta.jpg" alt="Тета-хілінг" />
                       <h3>Тетахілінг</h3>
                       <p>
                           Тета хілінг (ThetaHealing) - це практичні знання, які дозволяють працювати над своїм підсвідомим на хвилі Тета.
@@ -78,7 +80,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <img src="/nastav.jpg" alt="Наставництво" />
+                      <Image src="/nastav.jpg" alt="Наставництво" />
                       <h3>Індивідуальний супровід</h3>
                       <p>
                           Індивідуальний формат глибинної сумісної роботи над запитом.
@@ -89,7 +91,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <img src="/lila.jpg" alt="Гра Ліла" />
+                      <Image src="/lila.jpg" alt="Гра Ліла" />
                       <h3>Гра Ліла </h3>
                       <p>
                           Ліла це глибока духовно психолигічна гра, яка допомогає знайти відповіді на найважливіші запитання, побачити внутрішні ресурси та подолати обмеження
@@ -98,7 +100,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <img src="/tsv.jpg" alt="Цвяхостояння " />
+                      <Image src="/tsv.jpg" alt="Цвяхостояння " />
                       <h3>Цвяхостояння </h3>
                       <p>
                         Церемонія цвяхостояння - практика на пізнання себе через чесність та розслаблений стан
@@ -108,7 +110,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <img src="/numer.jpg" alt="Нумерологічний розбір особистості" />
+                      <Image src="/numer.jpg" alt="Нумерологічний розбір особистості" />
                       <h3>Нумерологічний розбір особистості</h3>
                       <p>
                           Це один з методів нумерології, який лише за допомогою твоєї дати народження, глибше розкриє твій потенціал та здібності.
@@ -127,7 +129,7 @@ export default function HomePage() {
                   </div>
                   <div className="telegram-image">
                       <a href="https://t.me/iryna_kotelianets" target="_blank" rel="noopener noreferrer">
-                          <img src="/telegram.jpg" alt="Telegram" />
+                          <Image src="/telegram.jpg" alt="Telegram" />
                       </a>
                   </div>
               </div>
