@@ -29,6 +29,7 @@ export default function HomePage() {
               </div>
           </section>
 
+
           <section id="about" className="about section">
               <div className="about-content">
                   <div className="about-images">
@@ -70,7 +71,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <Image src="/teta.jpg" alt="Тета-хілінг" />
+                      <Image src="/teta.jpg" alt="Тета-хілінг"
+                             width={400}
+                             height={300}
+                             className="rounded-md"/>
                       <h3>Тетахілінг</h3>
                       <p>
                           Тета хілінг (ThetaHealing) - це практичні знання, які дозволяють працювати над своїм підсвідомим на хвилі Тета.
@@ -80,7 +84,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <Image src="/nastav.jpg" alt="Наставництво" />
+                      <Image src="/nastav.jpg" alt="Наставництво"
+                             width={400}
+                             height={300}
+                             className="rounded-md"/>
                       <h3>Індивідуальний супровід</h3>
                       <p>
                           Індивідуальний формат глибинної сумісної роботи над запитом.
@@ -91,7 +98,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <Image src="/lila.jpg" alt="Гра Ліла" />
+                      <Image src="/lila.jpg" alt="Гра Ліла"
+                             width={400}
+                             height={300}
+                             className="rounded-md"/>
                       <h3>Гра Ліла </h3>
                       <p>
                           Ліла це глибока духовно психолигічна гра, яка допомогає знайти відповіді на найважливіші запитання, побачити внутрішні ресурси та подолати обмеження
@@ -100,7 +110,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <Image src="/tsv.jpg" alt="Цвяхостояння " />
+                      <Image src="/tsv.jpg" alt="Цвяхостояння"
+                      width={400}
+                      height={300}
+                      className="rounded-md"/>
                       <h3>Цвяхостояння </h3>
                       <p>
                         Церемонія цвяхостояння - практика на пізнання себе через чесність та розслаблений стан
@@ -110,7 +123,10 @@ export default function HomePage() {
                   </div>
 
                   <div className="service-card">
-                      <Image src="/numer.jpg" alt="Нумерологічний розбір особистості" />
+                      <Image src="/numer.jpg" alt="Нумерологічний розбір особистості"
+                             width={400}
+                             height={300}
+                             className="rounded-md"/>
                       <h3>Нумерологічний розбір особистості</h3>
                       <p>
                           Це один з методів нумерології, який лише за допомогою твоєї дати народження, глибше розкриє твій потенціал та здібності.
@@ -129,7 +145,11 @@ export default function HomePage() {
                   </div>
                   <div className="telegram-image">
                       <a href="https://t.me/iryna_kotelianets" target="_blank" rel="noopener noreferrer">
-                          <Image src="/telegram.jpg" alt="Telegram" />
+                          <Image src="/telegram.jpg" alt="Telegram"
+                                 width={400}
+                                 height={300}
+                                 className="rounded-md"
+                          />
                       </a>
                   </div>
               </div>

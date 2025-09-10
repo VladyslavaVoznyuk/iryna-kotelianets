@@ -12,9 +12,6 @@ const testimonials = [
     { id: 6, src: "/clients/client6.jpg", alt: "Відгук 6" },
     { id: 7, src: "/clients/client7.jpg", alt: "Відгук 7" },
     { id: 8, src: "/clients/client8.jpg", alt: "Відгук 8" },
-    { id: 9, src: "/clients/client9.jpg", alt: "Відгук 9" },
-    { id: 10, src: "/clients/client10.jpg", alt: "Відгук 10" },
-    { id: 11, src: "/clients/client11.jpg", alt: "Відгук 11" },
 ];
 
 export default function Testimonials() {

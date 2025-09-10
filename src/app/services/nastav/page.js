@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
 
 import "./index.css";
+
 export default function NastavPage() {
     return (
         <main>
@@ -16,7 +17,10 @@ export default function NastavPage() {
             </nav>
 
             <section className="service-detail section-bg">
+                <h1 className="page-title">Індивідуальний супровід</h1>
+
                 <div className="service-container">
+                    {/* Фото зліва */}
                     <div className="service-image">
                         <Image
                             src="/images/nastav2.jpg"
@@ -27,9 +31,8 @@ export default function NastavPage() {
                         />
                     </div>
 
-                    <div className="container">
-                        <h1>Індивідуальний супровід</h1>
-
+                    {/* Текст справа */}
+                    <div className="service-info">
                         <p className="intro">
                             Для тих, хто хоче попрацювати над своїми переконаннями, обмеженнями, розкрити та прийняти в собі свої грані,
                             почати жити в згоді з собою і виконувати свої істинні бажання.
@@ -39,7 +42,7 @@ export default function NastavPage() {
                             <h2>Формат</h2>
                             <ul>
                                 <li>6 тижнів знаходження в спільному полі</li>
-                                <li>6 онлайн зустрічей (1.5-2 години)</li>
+                                <li>6 онлайн зустрічей (1.5–2 години)</li>
                                 <li>Постійна підтримка в чаті</li>
                                 <li>Індивідуальні практики та медитації</li>
                             </ul>
@@ -68,13 +71,17 @@ export default function NastavPage() {
                                 <li>Стосунки (з собою, соціумом, батьками, партнером)</li>
                                 <li>Відкриття творчого потенціалу</li>
                             </ul>
-                            <p class="note">(будь-які сфери та запит обговорюються та формуються індивідуально)</p>
+                            <p className="note">
+                                (будь-які сфери та запит обговорюються та формуються індивідуально)
+                            </p>
                         </div>
+
                         <em>
-                            *для зацікавлених в сумісній роботі, проводиться 20-ти хвилинна безкоштовна консультація ,
+                            *для зацікавлених в сумісній роботі проводиться 20-ти хвилинна безкоштовна консультація,
                             на якій ми сформуємо запит, обговоримо інструменти для роботи, умови та потенційний результат
-                            після сесій
+                            після сесій.
                         </em>
+
                         <div className="social-links">
                             <p>Запис можна здійснити в Telegram та Instagram</p>
                             <div className="icons">

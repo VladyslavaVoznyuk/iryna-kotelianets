@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaTelegramPlane, FaInstagram } from "react-icons/fa";
 
 import "./index.css";
+
 export default function ThetaPage() {
     return (
         <main>
@@ -16,20 +17,22 @@ export default function ThetaPage() {
             </nav>
 
             <section className="service-detail section-bg">
+                <h1 className="page-title">Тета-хілінг</h1>
+
                 <div className="service-container">
+                    {/* Фото зліва */}
                     <div className="service-image">
                         <Image
                             src="/images/theta2.jpg"
                             alt="Тета-хілінг"
-                            width={400}
-                            height={600}
+                            width={500}
+                            height={700}
                             className="rounded-xl shadow-lg"
                         />
                     </div>
 
-                    <div className="container">
-                        <h2>Тета-хілінг</h2>
-
+                    {/* Текст справа */}
+                    <div className="service-info">
                         <p className="intro">
                             Тета-хілінг – це одна з ефективних технік в роботі з переконаннями, що обмежують, з негативними емоціями, страхами та іншими блоками в підсвідомості людини.
                             Термін “зцілення” має на увазі різні аспекти добробуту: одужання від хвороби, створення гармонійних відносин, поліпшення фінансового становища і т.д.
