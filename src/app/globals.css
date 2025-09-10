@@ -42,6 +42,7 @@ body {
   color: #fff;
 }
 
+
 .hero {
   height: 120vh;
   background: linear-gradient(to bottom, #C9B09C, #f3d6c0);
@@ -126,8 +127,8 @@ body {
   .hero {
     position: relative;
     height: 100vh;
-    padding: 0;
     background: linear-gradient(to bottom, #C9B09C, #f3d6c0);
+    padding-top: 120px;
   }
 
   .hero-content {
@@ -214,7 +215,6 @@ body {
     background: #401313;
   }
 }
-
 
 
 .section {
@@ -538,7 +538,7 @@ body {
 
   .telegram-text h1 {
     grid-area: text;
-    font-size: 36px;
+    font-size: 26px;
     text-align: center;
     margin: 0 0 8px;
   }
@@ -644,16 +644,40 @@ body {
 }
 
 @media (max-width: 768px) {
+  .testimonial-row {
+    gap: 10px;
+  }
+
   .testimonial-card {
     flex: 0 0 100%;
     height: auto;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 
   .testimonial-card img {
     height: auto;
-    max-height: 400px;
+    max-height: 350px;
+    object-fit: contain;
+  }
+
+  .arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1.3rem;
+    top: 45%;
+  }
+
+  .arrow.prev {
+    left: 5px;
+  }
+
+  .arrow.next {
+    right: 5px;
   }
 }
+
 
 
 .footer {
