@@ -648,21 +648,28 @@ body {
 
 @media (max-width: 768px) {
   .testimonial-row {
-    gap: 10px;
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    gap: 0;
   }
 
   .testimonial-card {
     flex: 0 0 100%;
-    height: auto;
-    padding: 20px;
-    font-size: 16px;
-    line-height: 1.4;
+    padding: 15px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .testimonial-card img {
+    width: 100%;
     height: auto;
     max-height: 350px;
     object-fit: contain;
+    border-radius: 12px;
   }
 
   .arrow {
@@ -684,7 +691,7 @@ body {
 
 
 .footer {
-  background: #8C5845;
+  background: #a9917a;
   color: #fff;
   text-align: center;
   padding: 50px;
